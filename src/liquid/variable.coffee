@@ -67,6 +67,7 @@ module.exports = class Variable
     filtered.then (f) ->
       return f unless f instanceof Liquid.Drop
       f.context = context
-      f.toString()
+      # f.toString()
+      f
     .catch (e) ->
       context.handleError e
