@@ -17,11 +17,11 @@
   "description": "Node.js port of Tobias Lütke's Liquid template engine.",
   "version": "3.0.0",
   "license": "MIT",
-  "homepage": "https://github.com/sirlantis/liquid-node",
-  "bugs": "https://github.com/sirlantis/liquid-node/issues",
+  "homepage": "https://github.com/innerfunction/liquid-node",
+  "bugs": "https://github.com/innerfunction/liquid-node/issues",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sirlantis/liquid-node.git"
+    "url": "git://github.com/innerfunction/liquid-node.git"
   },
   "keywords": [
     "liquid",
