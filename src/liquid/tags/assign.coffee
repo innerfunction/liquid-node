@@ -18,5 +18,8 @@ module.exports = class Assign extends Liquid.Tag
     super
 
   render: (context) ->
-    context.lastScope()[@to] = @from.render(context)
+    if @to != @from.name
+      context.lastScope()[@to] = @from.render(context)
+    else
+      Promise.resolve(@from.render(context)).then (v) -> context.lastScope()[@to] = v
     super context
